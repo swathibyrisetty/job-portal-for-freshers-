@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>new-gen-st — Job portal for freshers</title>
+<meta name="description" content="FirstShift helps freshers land their first job. Browse entry-level roles, filter by no-experience-needed, and apply in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="mark">NG</span> new-gen-st</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="jobs.html">Browse jobs</a></li>
+      <li><a href="jobs.html#internships">Internships</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+    </ul>
+    <div class="nav-actions">
+      <span id="navLoginSlot"><a href="login.html" class="btn btn-outline btn-sm">Log in</a></span>
+      <a href="jobs.html" class="btn btn-primary btn-sm">Find a job</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="eyebrow">Built for zero-experience job seekers</span>
+      <h1>Your career doesn't need<br><em>a head start.</em><br>It needs a first shift.</h1>
+      <p class="lede">new-gen-st only lists roles that welcome freshers — no "2 years experience required" fine print, no guesswork. Filter by degree, stipend, and city, then apply in minutes.</p>
+
+      <form class="search-card" role="search" onsubmit="event.preventDefault(); window.location.href='jobs.html';">
+        <input type="text" placeholder="Job title, e.g. 'Junior Analyst'" aria-label="Job title">
+        <select aria-label="Location">
+          <option>Any location</option>
+          <option>Hyderabad</option>
+          <option>Bengaluru</option>
+          <option>Pune</option>
+          <option>Remote</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Search jobs</button>
+      </form>
+
+      <div class="hero-stats">
+        <div><strong>2,400+</strong><span>fresher-only openings</span></div>
+        <div><strong>380</strong><span>hiring companies</span></div>
+        <div><strong>0 yrs</strong><span>experience required</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="stamp">
+        <div class="stamp-inner">Fresher<br>Approved<br>— No Exp. Needed —</div>
+      </div>
+      <span class="caption">Every listing checked by hand</span>
+    </div>
+  </div>
+</header>
+
+<section id="categories">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Start somewhere</span>
+        <h2>Popular first roles</h2>
+        <p>The roles freshers land most often — grouped by the skills you already built in college.</p>
+      </div>
+      <a href="jobs.html" class="btn btn-outline btn-sm">View all categories</a>
+    </div>
+    <div class="chip-row">
+      <a href="jobs.html" class="chip">Software / IT <span class="count">612</span></a>
+      <a href="jobs.html" class="chip">Sales &amp; BD <span class="count">301</span></a>
+      <a href="jobs.html" class="chip">Design <span class="count">128</span></a>
+      <a href="jobs.html" class="chip">Data &amp; Analytics <span class="count">247</span></a>
+      <a href="jobs.html" class="chip">Marketing <span class="count">190</span></a>
+      <a href="jobs.html" class="chip">Customer Support <span class="count">214</span></a>
+      <a href="jobs.html" class="chip">Finance <span class="count">96</span></a>
+      <a href="jobs.html" class="chip">Content Writing <span class="count">83</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="featured">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Fresh this week</span>
+        <h2>Featured openings for freshers</h2>
+        <p>Hand-picked roles from companies that actively hire and train first-time employees.</p>
+      </div>
+      <a href="jobs.html" class="btn btn-outline btn-sm">Browse all 2,400+ jobs</a>
+    </div>
+
+    <div class="job-grid" id="featuredGrid">
+      <p>Loading fresher-friendly roles…</p>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">The process</span>
+        <h2>Four steps from resume to offer letter</h2>
+        <p>Built around how freshers actually job-hunt — no hidden experience thresholds.</p>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Build your profile</h3>
+        <p>Add your degree, projects, and skills — no work history required.</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Filter to fresher roles</h3>
+        <p>Every listing is pre-checked for 0–1 year eligibility, so you never waste an application.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Apply in one click</h3>
+        <p>Your profile becomes your application — no repeated forms per company.</p>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <h3>Interview &amp; onboard</h3>
+        <p>Track every response in one dashboard, from screening call to offer letter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-strip">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">First shifts, told first-hand</span>
+        <h2>From application to offer letter</h2>
+      </div>
+    </div>
+    <div class="testimonials">
+      <div class="t-card">
+        <p class="quote">"I stopped getting rejected for 'lack of experience' the day I started applying only to roles marked fresher-friendly."</p>
+        <div class="who"><div class="avatar">A</div><div><strong>Anika R.</strong><span>Junior Software Engineer, Nexbyte</span></div></div>
+      </div>
+      <div class="t-card">
+        <p class="quote">"The one-click apply meant I could send out fifteen applications on a single Sunday evening."</p>
+        <div class="who"><div class="avatar">R</div><div><strong>Rohit K.</strong><span>Data Analyst Trainee, Delta Insights</span></div></div>
+      </div>
+      <div class="t-card">
+        <p class="quote">"My design internship turned full-time in four months — the listing was upfront about that path from day one."</p>
+        <div class="who"><div class="avatar">S</div><div><strong>Sana M.</strong><span>UI/UX Designer, Pixelwave</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Your first shift is closer than it feels.</h2>
+        <p>Create a free profile and get matched to fresher-only roles the moment they're posted.</p>
+      </div>
+      <a href="jobs.html" class="btn btn-primary">Browse open roles</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="mark">NG</span> new-gen-st</a>
+        <p>A job portal built only for people looking for their first job. No experience gatekeeping.</p>
+      </div>
+      <div>
+        <h4>For job seekers</h4>
+        <ul>
+          <li><a href="jobs.html">Browse jobs</a></li>
+          <li><a href="jobs.html#internships">Internships</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#">Resume tips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>For employers</h4>
+        <ul>
+          <li><a href="#">Post a fresher job</a></li>
+          <li><a href="#">Hiring plans</a></li>
+          <li><a href="#">Campus drives</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About new-gen-st</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 new-gen-st. All rights reserved.</span>
+      <span>Made for freshers, everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

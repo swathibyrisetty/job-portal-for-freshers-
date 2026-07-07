@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browse fresher jobs — new-gen-st</title>
+<meta name="description" content="Filter thousands of fresher-only job listings by category, location, and job type.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="mark">NG</span> new-gen-st</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="jobs.html" class="active">Browse jobs</a></li>
+      <li><a href="jobs.html#internships">Internships</a></li>
+      <li><a href="index.html#how-it-works">How it works</a></li>
+    </ul>
+    <div class="nav-actions">
+      <span id="navLoginSlot"><a href="login.html" class="btn btn-outline btn-sm">Log in</a></span>
+      <a href="jobs.html" class="btn btn-primary btn-sm">Find a job</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-block:2.6rem;">
+  <div class="container" style="grid-template-columns:1fr;">
+    <div class="hero-copy">
+      <span class="eyebrow">2,412 fresher-only listings</span>
+      <h1 style="font-size:clamp(1.7rem,3vw,2.4rem);">Find a role that's actually open to freshers.</h1>
+      <form class="search-card" role="search" id="searchForm" style="max-width:760px;">
+        <input type="text" id="searchInput" placeholder="Job title or keyword" aria-label="Job title or keyword">
+        <select id="locationSelect" aria-label="Location">
+          <option value="">Any location</option>
+          <option>Hyderabad</option>
+          <option>Bengaluru</option>
+          <option>Pune</option>
+          <option>Chennai</option>
+          <option>Remote</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container jobs-layout">
+
+    <aside class="filter-panel">
+      <h3>Filter results</h3>
+
+      <div class="filter-group">
+        <span class="label">Category</span>
+        <label class="filter-option"><input type="checkbox" class="f-category" value="Software / IT"> Software / IT</label>
+        <label class="filter-option"><input type="checkbox" class="f-category" value="Sales & BD"> Sales &amp; BD</label>
+        <label class="filter-option"><input type="checkbox" class="f-category" value="Design"> Design</label>
+        <label class="filter-option"><input type="checkbox" class="f-category" value="Data & Analytics"> Data &amp; Analytics</label>
+        <label class="filter-option"><input type="checkbox" class="f-category" value="HR"> HR</label>
+        <label class="filter-option"><input type="checkbox" class="f-category" value="Support"> Customer Support</label>
+      </div>
+
+      <div class="filter-group">
+        <span class="label">Job type</span>
+        <label class="filter-option"><input type="checkbox" class="f-type" value="Full-time"> Full-time</label>
+        <label class="filter-option"><input type="checkbox" class="f-type" value="Internship"> Internship</label>
+        <label class="filter-option"><input type="checkbox" class="f-type" value="Remote"> Remote</label>
+      </div>
+
+      <div class="filter-group">
+        <span class="label">Experience</span>
+        <label class="filter-option"><input type="checkbox" class="f-exp" value="0"> 0 years</label>
+        <label class="filter-option"><input type="checkbox" class="f-exp" value="0-1"> 0–1 year</label>
+      </div>
+
+      <button class="btn btn-outline btn-block btn-sm" id="clearFilters">Clear filters</button>
+    </aside>
+
+    <div class="jobs-main">
+      <div class="results-bar">
+        <span class="count" id="resultCount">12 roles found</span>
+        <select id="sortSelect" aria-label="Sort by" style="border:1px solid var(--rule); border-radius:8px; padding:.5em .8em; font-family:var(--body);">
+          <option value="recent">Most recent</option>
+          <option value="stipend-high">Stipend: high to low</option>
+          <option value="stipend-low">Stipend: low to high</option>
+        </select>
+      </div>
+
+      <div class="job-list" id="jobList"><!-- populated by script.js --></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <div class="stamp"><div class="stamp-inner">No matches<br>yet</div></div>
+        <p>No roles match those filters. Try clearing one or two.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="mark">NG</span> new-gen-st</a>
+        <p>A job portal built only for people looking for their first job. No experience gatekeeping.</p>
+      </div>
+      <div>
+        <h4>For job seekers</h4>
+        <ul>
+          <li><a href="jobs.html">Browse jobs</a></li>
+          <li><a href="jobs.html#internships">Internships</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="#">Resume tips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>For employers</h4>
+        <ul>
+          <li><a href="#">Post a fresher job</a></li>
+          <li><a href="#">Hiring plans</a></li>
+          <li><a href="#">Campus drives</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About new-gen-st</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 new-gen-st. All rights reserved.</span>
+      <span>Made for freshers, everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Role details — new-gen-st</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="mark">NG</span> new-gen-st</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="jobs.html" class="active">Browse jobs</a></li>
+      <li><a href="jobs.html#internships">Internships</a></li>
+      <li><a href="index.html#how-it-works">How it works</a></li>
+    </ul>
+    <div class="nav-actions">
+      <span id="navLoginSlot"><a href="login.html" class="btn btn-outline btn-sm">Log in</a></span>
+      <a href="jobs.html" class="btn btn-primary btn-sm">Find a job</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="jd-header">
+  <div class="container">
+    <div class="logo" id="jdLogo">··</div>
+    <div>
+      <h1 id="jdTitle">Loading role…</h1>
+      <span class="company" id="jdCompany"></span>
+      <div class="jd-meta-row" id="jdMetaRow"></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container jd-body" id="jdRoot">
+
+    <div class="jd-main">
+      <div class="jd-card">
+        <span class="badge-stamp">Fresher friendly</span>
+        <h2 class="mt-lg" style="margin-top:1rem;">About the role</h2>
+        <p id="jdDescription">Loading…</p>
+      </div>
+
+      <div class="jd-card">
+        <h2>What you'll do</h2>
+        <ul id="jdResponsibilities"></ul>
+      </div>
+
+      <div class="jd-card">
+        <h2>What we're looking for</h2>
+        <ul id="jdRequirements"></ul>
+      </div>
+
+      <div class="jd-card">
+        <h2>Why freshers do well here</h2>
+        <p id="jdWhyFreshers"></p>
+      </div>
+    </div>
+
+    <aside class="jd-side">
+      <div class="jd-card">
+        <a href="#" class="btn btn-primary btn-block" id="jdApplyBtn">Apply now</a>
+        <p style="font-size:.82rem; color:var(--ink-soft); text-align:center; margin:.9rem 0 0;" id="jdApplyNote">Takes about 4 minutes · 1-click with your FirstShift profile</p>
+      </div>
+
+      <div class="jd-card">
+        <h2>Role at a glance</h2>
+        <div id="jdFacts"></div>
+      </div>
+
+      <div class="jd-card">
+        <h2 id="jdAboutCompanyHeading">About this company</h2>
+        <p style="font-size:.9rem; color:var(--ink-soft);" id="jdAboutCompany"></p>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="mark">NG</span> new-gen-st</a>
+        <p>A job portal built only for people looking for their first job. No experience gatekeeping.</p>
+      </div>
+      <div>
+        <h4>For job seekers</h4>
+        <ul>
+          <li><a href="jobs.html">Browse jobs</a></li>
+          <li><a href="jobs.html#internships">Internships</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="#">Resume tips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>For employers</h4>
+        <ul>
+          <li><a href="#">Post a fresher job</a></li>
+          <li><a href="#">Hiring plans</a></li>
+          <li><a href="#">Campus drives</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About new-gen-st</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 new-gen-st. All rights reserved.</span>
+      <span>Made for freshers, everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
